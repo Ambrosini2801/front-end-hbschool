@@ -8,13 +8,19 @@ app.config(function($routeProvider){
 
     .when('/cadastro', {
         templateUrl : 'app/views/cadastro.html',
-        controller  : 'NotaCtrl',
+        controller  : 'CadastroCtrl',
+    })
+
+    .when('/notas', {
+        templateUrl : 'app/views/notas.html',
+        controller : 'NotasCtrl',
     })
 
     .when('/boletim', {
         templateUrl : 'app/views/boletim.html',
         controller  : 'BoletimCtrl',
     })
+   
 
     .otherwise ({ redirectTo: '/' });
 });

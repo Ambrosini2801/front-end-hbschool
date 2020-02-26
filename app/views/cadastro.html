@@ -1,29 +1,17 @@
-<!-- cadastro.html -->
 <div>
     <h1>Cadastro</h1>
-    <p>Faça aqui o seu cadastro de alunos, disciplinas e notas.</p>
+    <p>Faça aqui o seu cadastro de alunos e disciplinas.</p>
 
 </div>
 
-<body ng-app="app" ng-controller="NotaCtrl">
+<body ng-app="app" ng-controller="CadastroCtrl">
 
-    <pre><input ng-model="nome"  placeholder= "Preencha o nome do aluno." type="text" footer class="text-center"  size="70"><pre></input>
-    <pre><input ng-model="data" placeholder="Preencha a data de nascimento."type="text" footer class="text-center" size="70"></input></pre>
-
-    <button ng-click="salvar(nome, data)"> Salvar</button></footer>
-
-    <pre><input ng-model="disciplinas" placeholder="Preencha as disciplinas." type="text" footer class="text-center" size="70"></input></pre>
-    <button ng-click="ok(disciplinas)">Salvar</button>
-
-
-    <input ng-model="primeiraNota" placeholder="Preencha a primeira nota." type="text" footer class="text-center" size="25" required oninvalid="setCustomValidity
-    ('Por favor, preencha a nota')" onchange="try{setCustomValidity('')}catch(e){}"></input>
-
-    <input ng-model="segundaNota" placeholder="Preencha a segunda nota." type="text" footer class="text-center" size="25" ></input>
-
-    <input ng-model="terceiraNota" placeholder="Preencha a terceira nota." type="text" footer class="text-center" size="25" ></input>
+    <pre><input ng-model="nome"  placeholder= "Preencha o nome do aluno" type="text" footer class="text-center"  size="40"><pre></input>
+    <pre><input ng-model="data" placeholder="Data de nascimento"type="text" footer class="text-center" size="20"></input></pre>
+    <button ng-click="salvar(nome, data)"type="text" footer class="text-center"> Salvar</button></footer>
     
-    <button ng-click="okey(primeiraNota, segundaNota, terceiraNota)">Salvar</button>
+    <pre><input ng-model="disciplinas" placeholder="Adicione a disciplina" type="text" footer class="text-center" size="25"></input></pre>
+    <button ng-click="ok(disciplinas)"type="text" footer class="text-center">Salvar</button>
 
     </footer>
 

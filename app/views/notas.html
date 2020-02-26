@@ -1,0 +1,30 @@
+<h1> Notas</h1>
+<p> Adicione as notas dos seus alunos.</p>
+
+<div ng-init="buscar()">
+    <select ng-model="alunos">
+        <option value={{aluno.id}} ng-repeat="aluno in alunoList">{{aluno.nomeAluno}}</option>
+    </select>
+</div>
+
+<br>
+<div ng-init="ok()">
+    <select ng-model="disciplinas">
+        <option value={{materias.id}} ng-repeat="materias in disciplinaList">{{materias.disciplinas}}</option>
+    </select>
+</div>
+<br>
+<pre>
+
+    <input ng-model="primeiraNota" placeholder="Primeira nota" type="text" footer class="text-center" size="15"></input>
+
+    <input ng-model="segundaNota" placeholder="Segunda nota" type="text" footer class="text-center" size="15"></input>
+
+    <input ng-model="terceiraNota" placeholder="Terceira nota" type="text" footer class="text-center" size="15"></input>
+
+   <button ng-click="add(alunos,disciplinas,primeiraNota,segundaNota,terceiraNota)" footer class="text-center">Salvar</button>
+      
+    </div>
+    </footer>
+
+</body>

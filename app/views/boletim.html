@@ -1,9 +1,20 @@
-<!-- boletim.html -->
 <div>
     <h1>Boletim</h1>
     <p>Aqui você vai gerar o boletim!</p>
+
+    <div ng-init="gerar()">
+        <select ng-model="idAlunos">
+            <option value={{aluno.id}} ng-repeat="aluno in alunoList">{{aluno.nomeAluno}}</option>
+        </select>
+    </div>
+
+    <div id="botao">
+        <div style="padding-top: 10px;" id="col-btn" class="col-12">
+            <a aria-pressed="true" class="btn btn-dark"
+                    href="http://localhost:8080/notas/report/{{idAlunos}}"
+                    target="_blank"
+                    role="button">Gerar Boletim</a>                       
+        </div>
+    </div>
+
 </div>
-
-<body ng-app="app" ng-controller="BoletimCtrl">
-
-
