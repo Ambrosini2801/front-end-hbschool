@@ -28,7 +28,7 @@ app.controller('NotasCtrl', function ($scope, $http) {
         });
     };
 
-    $scope.add= function (alunos, disciplinas, primeiraNota, segundaNota, terceiraNota) {
+    $scope.add = function (alunos, disciplinas, primeiraNota, segundaNota, terceiraNota) {
         var data = {
             alunos: alunos,
             disciplinas: disciplinas,
@@ -38,9 +38,9 @@ app.controller('NotasCtrl', function ($scope, $http) {
         };
 
         $http.post('http://localhost:8080/notas', data).then(function (response) {
-           
 
 
         });
     };
+
 });

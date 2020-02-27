@@ -15,15 +15,25 @@
 </div>
 <br>
 <pre>
+    <script>
+        function somenteNumeros(num) {
+            var er = /[^0-9.]/;
+            er.lastIndex = 0;
+            var campo = num;
+            if (er.test(campo.value)) {
+              campo.value = "";
+            }
+        }
+     </script>
 
-    <input ng-model="primeiraNota" placeholder="Primeira nota" type="text" footer class="text-center" size="15"></input>
+    <input ng-model="primeiraNota" placeholder="Primeira nota" type="text" min="0" max="10" footer class="text-center" size="15"  onkeyup="somenteNumeros(this);"></input>
 
-    <input ng-model="segundaNota" placeholder="Segunda nota" type="text" footer class="text-center" size="15"></input>
+    <input ng-model="segundaNota" placeholder="Segunda nota" type="tex" footer class="text-center" size="15" onkeyup="somenteNumeros(this);"></input>
 
-    <input ng-model="terceiraNota" placeholder="Terceira nota" type="text" footer class="text-center" size="15"></input>
-
-   <button ng-click="add(alunos,disciplinas,primeiraNota,segundaNota,terceiraNota)" footer class="text-center">Salvar</button>
-      
+    <input ng-model="terceiraNota" placeholder="Terceira nota" type="text" footer class="text-center" size="15" onkeyup="somenteNumeros(this);"></input>
+    
+    <button ng-click="add(alunos,disciplinas,primeiraNota,segundaNota,terceiraNota)" id="botao" footer class="text-center">Salvar</button>
+     
     </div>
     </footer>
 
