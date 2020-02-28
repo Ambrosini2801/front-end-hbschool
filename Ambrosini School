@@ -22,7 +22,7 @@ Iniciando
   Quando você for rodar a aplicação precisará de todos os programas acima (no SQL Server você poderá verificar se o cadastro foi salvo).
   Primeiramente você terá que subir o programa Docker, inicializando-o pelo IntelliJ com o comando docker-compose up. 
   Colocar o comando server no terminal do Visual Studio Code, verificando se a opção 1:node está selecionada, se não, favor selecioná-la.
-  Após executado as funções acima, vá a página e cadastre um aluno com sua data de nascimento (a data precisará ser informada no padrão americano ou seja, yyyy/mm/dd) e disciplina, salve ambos. 
+  Após executado as funções acima, vá a página e cadastre um aluno com sua data de nascimento e disciplina, salve ambos. 
   Na opção de notas você irá selecionar o aluno e disciplina que deseja cadastrar as 03 (três) notas finais, sempre salvando cada função realizada. Logo após você irá na opção do boletim para poder gerar o boletim do aluno que deseja.
 
 
